@@ -48,7 +48,7 @@ public class DebuggingExample {
             total += name.length(); // Use Step Into here and check the 'total' variable
         }
         return total;
-    }
+    } 
 
     public double calculateAverageLetters(List<String> names, int totalLetters) {
         return names.isEmpty() ? 0 : (double) totalLetters / names.size(); // Set a breakpoint and use 'Evaluate Expression' here
