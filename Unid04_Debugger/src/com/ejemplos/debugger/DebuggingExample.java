@@ -10,6 +10,7 @@ public class DebuggingExample {
         names.add("Charlie");
         names.add("Diana");
         names.add("Juan");
+        names.add("Jorge");
 
         DebuggingExample example = new DebuggingExample();
         example.printNames(names);
@@ -52,5 +53,13 @@ public class DebuggingExample {
     public double calculateAverageLetters(List<String> names, int totalLetters) {
         return names.isEmpty() ? 0 : (double) totalLetters / names.size(); // Set a breakpoint and use 'Evaluate Expression' here
     }
-
+    /**
+     * Metodo que devuelve un mensaje de confirmacion de consulta.
+     * @param usuario Nombre del usuario que realiza la consulta.
+     * @return String con el mensaje de respuesta.
+     */
+    public String consultarEstado(String usuario) {
+        // JSC: Se añade un método de consulta.
+        return "Consulta realizada con exito por: " + usuario;
+    }
 }
